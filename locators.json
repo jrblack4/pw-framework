@@ -1,0 +1,9 @@
+{
+  "homePage": {
+    "getStartedLink": {
+      "type": "role",
+      "role": "link",
+      "name": "Get Started"
+    }
+  }
+}

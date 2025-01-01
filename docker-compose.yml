@@ -1,0 +1,19 @@
+networks:
+  test:
+    driver: bridge
+
+services:
+  pw-server:
+    container_name: pw-server
+    image: mcr.microsoft.com/playwright:v1.49.1-noble
+    command:
+      - /bin/sh
+      - -c
+      - |
+          cd /home/pwuser
+          npx -y playwright@1.49.1 run-server --port 9222
+    ports:
+      - "9222:9222"
+    networks:
+      - test
+    init: true

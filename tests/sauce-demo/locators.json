@@ -1,0 +1,16 @@
+{
+  "loginPage": {
+    "username": {
+      "type": "testid",
+      "name": "username"
+    },
+    "password": {
+      "type": "testid",
+      "name": "username"
+    },
+    "loginBtn": {
+      "type": "data-testid",
+      "name": "login-button"
+    },
+  }
+}
